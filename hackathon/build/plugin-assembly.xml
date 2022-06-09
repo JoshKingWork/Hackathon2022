@@ -10,12 +10,17 @@
          <source>target/teamcity-plugin.xml</source>
          <outputDirectory>/</outputDirectory>
      </file> 
+     <file>
+         <source>target/hackathon-agent.zip</source>
+         <outputDirectory>agent</outputDirectory>
+     </file> 
   </files>
   <moduleSets>
     <moduleSet>
        <useAllReactorProjects>true</useAllReactorProjects>
        <includes>
            <include>com.ngpvan.build.hackathon:hackathon-server</include>
+           <include>com.ngpvan.build.hackathon:hackathon-common</include>
        </includes> 
        <binaries>
            <outputDirectory>server</outputDirectory>

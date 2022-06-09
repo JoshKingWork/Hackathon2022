@@ -2,6 +2,9 @@
 .idea
 .vscode
 hackathon/target
+hackathon/build/target
+hackathon/hackathon-agent/target
+hackathon/hackathon-common/target
 hackathon/hackathon-server/target
 teamcity-server/data
 teamcity-server/logs

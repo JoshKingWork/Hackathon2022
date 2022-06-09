@@ -1,10 +1,7 @@
 package com.ngpvan.build.hackathon;
 
-public class AppServer {
-    KeyVaultParameterResolverServerProvider provider;
-
-    public AppServer() {
+public class AppCommon {
+    public AppCommon() {
         this.provider = new KeyVaultParameterResolverServerProvider();
     }
-
 }
