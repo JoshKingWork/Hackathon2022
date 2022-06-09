@@ -12,7 +12,7 @@
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
-      <artifactId>server-api</artifactId>
+      <artifactId>common-api</artifactId>
       <version>${teamcity-version}</version>
       <scope>provided</scope>
     </dependency>

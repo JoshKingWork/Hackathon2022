@@ -12,9 +12,9 @@ public class KeyVaultParameterResolver implements ParameterResolver {
     public ProcessingResult resolve(@NotNull String key, @NotNull String value, @NotNull ParametersProvider parameters) {
         ProcessingResultImpl result;
         if (key.equals("hello")) {
-            result = new ProcessingResultImpl("world", true, false);
+            result = new ProcessingResultImpl("world", true, true);
         } else {
-            result = new ProcessingResultImpl(value, false, false);
+            result = new ProcessingResultImpl(value, false, true);
         }
         return result;
     }

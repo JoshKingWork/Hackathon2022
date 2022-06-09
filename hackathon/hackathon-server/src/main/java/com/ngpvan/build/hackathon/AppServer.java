@@ -2,11 +2,11 @@ package com.ngpvan.build.hackathon;
 
 import jetbrains.buildServer.log.Loggers;
 public class AppServer {
-    KeyVaultParameterResolverServerProvider provider;
+    private KeyVaultParameterResolverServerProvider provider;
 
     public AppServer() {
         this.provider = new KeyVaultParameterResolverServerProvider();
-        Loggers.SERVER.info("KeyVaultParameterResolverAgentProvider is loaded in server");
+        Loggers.SERVER.info("KeyVaultParameterResolverServerProvider is loaded in server");
     }
 
 }
