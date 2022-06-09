@@ -1,4 +1,4 @@
-package com.ngpvan.build.hackathon.common;
+package com.ngpvan.build.hackathon;
 
 import jetbrains.buildServer.parameters.ParameterResolver;
 import jetbrains.buildServer.parameters.ParametersProvider;
