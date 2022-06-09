@@ -1,0 +1,6 @@
+.env
+.idea
+.vscode
+hackathon/target
+teamcity-server/data
+teamcity-server/logs
