@@ -8,6 +8,8 @@ services:
     volumes:
       - ./teamcity-server/data:C:/ProgramData/JetBrains/TeamCity
       - ./teamcity-server/logs:C:/TeamCity/logs
+      - ./hackathon:C:/hackathon/
+      - ./hackathon/target/:C:/ProgramData/jetbrains/teamcity/plugins/
     mem_limit: 2g
   agent:
     image: jetbrains/teamcity-agent:${TEAMCITY_VERSION}
