@@ -2,6 +2,7 @@ version: "2.1"
 services:
   server:
     build: .
+    env_file: .env
     image: ngpvan/teamcity-server
     ports:
       - "8112:8111"
@@ -13,6 +14,7 @@ services:
     mem_limit: 2g
   agent:
     image: jetbrains/teamcity-agent:${TEAMCITY_VERSION}
+    env_file: .env
     environment:
       - SERVER_URL=http://server:8111
       - TEAMCITY_SERVER_MEM_OPTS=-Xmx2g -XX:ReservedCodeCacheSize=350m
